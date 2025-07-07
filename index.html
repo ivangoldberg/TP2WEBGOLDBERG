@@ -8,8 +8,13 @@
 
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/htr2sdo.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/htr2sdo.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
     <!-- Framework CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
@@ -131,11 +136,11 @@
     <div class="row">
       <!-- Caja 1 -->
       <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 40px;">
+        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
           <img src="imagenes/caja1.png" class="mb-3" alt="Servicio">
           <h5>ORO</h5>
           <p class="p-custom">
-            3 vinos <b>nacionales</b> seleccionados mensualmente (dos tintos + uno blanco)<br>
+            3 vinos <b>nacionales</b>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
@@ -148,11 +153,11 @@
       </div>
       <!-- Caja 2 -->
       <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 40px;">
+        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
           <img src="imagenes/caja2.png" class="mb-3" alt="Servicio">
           <h5>RUBÍ</h5>
           <p class="p-custom">
-            3 vinos <b>internacionales</b> seleccionados mensualmente (dos tintos + uno blanco)<br>
+            3 vinos <b>internacionales</b>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
@@ -165,11 +170,11 @@
       </div>
       <!-- Caja 3 -->
       <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 40px;">
+        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
           <img src="imagenes/caja3.png" class="mb-3" alt="Servicio">
           <h5>PLATINO</h5>
           <p class="p-custom">
-            3 vinos <b>exclusivos</b> seleccionados mensualmente (dos tintos + uno blanco)<br>
+            3 vinos <b>exclusivos</b>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
@@ -185,36 +190,53 @@
 </section>
 
 
-
-
-
-<!-- SECCIÓN A: Texto centrado sin imagen -->
-<section class="section-spacing container text-center">
-  <h2 class="display-5" class="h2-custom">Título destacado</h2>
-  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
-  <div class="mt-4 d-flex justify-content-center gap-3">
-    <a href="#" class="btn btn-primary">Acción principal</a>
-    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
-  </div>
-</section>
-
-
-
-<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<!-- SECCIÓN B: Imagen derecha, texto izquierda -->
 <section class="section-spacing container">
   <div class="row align-items-center">
     <!-- Columna de texto -->
     <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Otra disposición</h2>
-      <p class="lead-custom">Sección útil para combinar mensajes con una imagen a la derecha.</p>
-      <a href="#" class="btn btn-primary mt-3">Conocé más</a>
+      <h2 class="h2-custom display-5">Beneficios</h2>
+      <p class="lead-custom"><b>Material de cata completo</b>
+Incluye fichas sensoriales impresas y acceso a videos guiados con degustaciones detalladas y consejos del sommelier.</p>
+      <p class="lead-custom"><b>Eventos privados y masterclasses</b>
+Invitaciones a catas virtuales y experiencias presenciales con sommeliers y productores.</p>
     </div>
     <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagenes/Beneficios.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
     </div>
   </div>
 </section>
+
+<!-- SECCIÓN C: Título centrado, imagen izquierda, texto derecha -->
+<section class="section-spacing container text-center">
+  <!-- Título centrado arriba -->
+  <h2 class="h2-custom display-5 mb-5">WineSwap</h2>
+
+  <!-- Contenido con imagen izquierda y texto derecha -->
+  <div class="row align-items-center text-start">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagenes/botellla_swap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <p class="lead-custom"><b>¿Tenés una botella repetida o simplemente querés probar otra cosa?</b>
+         Intercambiá vinos con otros miembros del club de forma simple y sin costo adicional.</p>
+              <p class="lead-custom">Elegí, solicitá el cambio y recibí una nueva selección en tu próxima caja..</p>
+<a href="#" class="btn btn-dark btn-large-black"style="color: black;">Intercambiar</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: Imagen de fondo con imagen centrada encima -->
+<section class="position-relative" style="background-image: url('imagenes/FONDO_BORDO.png'); background-size: cover; background-position: center; height: 500px;">
+  <div class="position-absolute top-50 start-50 translate-middle text-center">
+    <img src="imagenes/display.png" alt="Imagen centrada" class="img-fluid" style="width: 80vw; max-width: 1200px;">
+  </div>
+</section>
+
+
 
 <!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
 <section class="section-spacing container">
