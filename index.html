@@ -47,10 +47,11 @@
     <!-- Ítems del menú -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Descubrir</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Vinos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Beneficios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Preguntas</a></li>
       </ul>
     </div>
   </div>
@@ -59,36 +60,35 @@
 
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section class="hero-bg d-flex align-items-center" style="min-height: 100vh; padding-top: 100px;">
+<section class="hero-bg hero-section d-flex align-items-end">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row">
       
-      <!-- Texto principal alineado a la izquierda -->
+      <!-- Texto -->
       <div class="col-lg-6">
-        <div class="text-start" style="max-width: 500px;">
-<h1 class="h1-custom hero-title text-start mb-3">
-  <span class="ivy-light">SÉ PARTE</span><br>
-  <span class="ivy-light">
-    <span style="white-space: nowrap;">DEL <span class="ivy-semibold-italic">CLUB</span></span>
-  </span>
-</h1>
-          <p class="p-custom">De la cava hasta la puerta de tu casa</p>
-          <div class="d-flex gap-3 mt-4">
-<a href="#" class="btn btn-dark btn-large-black"style="color: black;">Suscribirme</a>
-
-
-          </div>
+        <div class="hero-text">
+          <h1 class="h1-custom mb-3">
+            <span class="ivy-light">SÉ PARTE</span><br>
+            <span class="ivy-light">DEL <span class="ivy-semibold-italic">CLUB</span></span>
+          </h1>
+          <p class="p-custom mb-4">Cada caja, un viaje sensorial.<br>Cada botella, una historia.</p>
+          <a href="#" class="btn btn-dark btn-large-black">Suscribirme</a>
         </div>
       </div>
 
-      <!-- Imagen destacada -->
-      <div class="col-lg-6 text-center">
-        <img src="imagenes/IMAGEN HERO.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      <!-- Imagen -->
+      <div class="col-lg-6 text-end">
+        <img src="imagenes/IMAGEN HERO.png" class="img-hero" alt="Imagen Hero">
       </div>
 
     </div>
   </div>
 </section>
+
+
+
+
+
 
 
 <!-- ABOUT: Sección sobre nosotros -->
@@ -97,16 +97,16 @@
   <div class="row">
     <!-- Tres columnas informativas -->
     <div class="col-md-4">
-      <h4 class="h4-custom">Comunidad exclusiva</h4>
       <img src="imagenes/icono1.png" alt="Icono comunidad" style="width: 60px; margin-top: 10px;">
+            <h4 class="h4-custom">Comunidad exclusiva</h4>
     </div>
     <div class="col-md-4">
-      <h4 class="h4-custom">Selección premium</h4>
       <img src="imagenes/icono2.png" alt="Icono selección" style="width: 40px; margin-top: 10px;">
+            <h4 class="h4-custom">Selección premium</h4>
     </div>
     <div class="col-md-4">
-      <h4 class="h4-custom">Entrega mensual</h4>
       <img src="imagenes/icono3.png" alt="Icono entrega" style="width: 60px; margin-top: 10px;">
+      <h4 class="h4-custom">Entrega mensual</h4>
     </div>
   </div>
 </section>
@@ -118,7 +118,7 @@
   <div class="row align-items-center">
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagenes/quienes-somos.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      <img src="imagenes/quienes-somos.png" class="content-img" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
     <div class="col-lg-6">
@@ -133,48 +133,53 @@
 <section class="services-bg">
   <div class="section-spacing container text-center">
     <h2 class="h2-custom text-white">Nuestras cajas</h2>
-    <div class="row">
-      <!-- Caja 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
-          <img src="imagenes/caja1.png" class="mb-3" alt="Servicio">
-          <h5>ORO</h5>
-          <p class="p-custom">
-            3 vinos <b>nacionales</b>
+    <div class="row justify-content-center">
+      
+      <!-- Caja ORO -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card h-100 p-4 text-center" style="background-color: #F2E9D8; color: #000; border-radius: 12px; width: 400px;">
+          <h5 style="font-size: 1rem; font-weight: bold;">ORO</h5>
+          <img src="imagenes/caja1.png" class="mb-3" alt="Caja Oro" style="max-width: 260px; height: auto; margin: 0 auto;">
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+            <b>3 vinos nacionales</b><br>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
             Decantación de quesos<br>
-            <del>Entrada a fiestas UvaClub</del><br>
-            <del>Copa coleccionable del mes</del>
+            <s>Entrada a fiestas UvaClub</s><br>
+            <s>Copa coleccionable del mes</s>
           </p>
-          <a href="#" class="btn btn-dark btn-large-black" style="color: black;">Ver plan</a>
+          <p style="font-size: 0.9rem; font-weight: 600;">50.00$ /mes</p>
+          <a href="#" class="btn btn-dark" style="background-color: #FFEFBB; color: black; font-weight: 600;">Ver plan</a>
         </div>
       </div>
-      <!-- Caja 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
-          <img src="imagenes/caja2.png" class="mb-3" alt="Servicio">
-          <h5>RUBÍ</h5>
-          <p class="p-custom">
-            3 vinos <b>internacionales</b>
+
+      <!-- Caja ZAFIRO -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card h-100 p-4 text-center" style="background-color: #F2E9D8; color: #000; border-radius: 12px; width: 400px;">
+          <h5 style="font-size: 1rem; font-weight: bold;">ZAFIRO</h5>
+          <img src="imagenes/caja2.png" class="mb-3" alt="Caja Zafiro" style="max-width: 260px; height: auto; margin: 0 auto;">
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+            <b>3 vinos internacionales</b><br>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
             Decantación de quesos<br>
             Entrada a fiestas UvaClub<br>
-            <del>Copa coleccionable del mes</del>
+            <s>Copa coleccionable del mes</s>
           </p>
-          <a href="#" class="btn btn-dark btn-large-black" style="color: black;">Ver plan</a>
+          <p style="font-size: 0.9rem; font-weight: 600;">100.00$ /mes</p>
+          <a href="#" class="btn btn-dark" style="background-color: #FFEFBB; color: black; font-weight: 600;">Ver plan</a>
         </div>
       </div>
-      <!-- Caja 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: #F2E9D8; color: #000; border-radius: 10px;">
-          <img src="imagenes/caja3.png" class="mb-3" alt="Servicio">
-          <h5>PLATINO</h5>
-          <p class="p-custom">
-            3 vinos <b>exclusivos</b>
+
+      <!-- Caja PLATINO -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card h-100 p-4 text-center" style="background-color: #F2E9D8; color: #000; border-radius: 12px; width: 400px;">
+          <h5 style="font-size: 1rem; font-weight: bold;">PLATINO</h5>
+          <img src="imagenes/caja3.png" class="mb-3" alt="Caja Platino" style="max-width: 260px; height: auto; margin: 0 auto;">
+          <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+            <b>3 vinos exclusivos</b><br>
             Fichas de cata impresas<br>
             QR a video de sommelier<br>
             10% de descuento en vinotecas asociadas<br>
@@ -182,12 +187,15 @@
             Entrada a fiestas UvaClub<br>
             Copa coleccionable del mes
           </p>
-          <a href="#" class="btn btn-dark btn-large-black" style="color: black;">Ver plan</a>
+          <p style="font-size: 0.9rem; font-weight: 600;">150.00$ /mes</p>
+          <a href="#" class="btn btn-dark" style="background-color: #FFEFBB; color: black; font-weight: 600;">Ver plan</a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
 <!-- SECCIÓN B: Imagen derecha, texto izquierda -->
@@ -203,7 +211,7 @@ Invitaciones a catas virtuales y experiencias presenciales con sommeliers y prod
     </div>
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagenes/Beneficios.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      <img src="imagenes/Beneficios.png" class="content-img" alt="Imagen ilustrativa">
     </div>
   </div>
 </section>
@@ -217,7 +225,7 @@ Invitaciones a catas virtuales y experiencias presenciales con sommeliers y prod
   <div class="row align-items-center text-start">
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagenes/botellla_swap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      <img src="imagenes/botellla_swap.png" class="content-img" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
     <div class="col-lg-6">
@@ -230,514 +238,137 @@ Invitaciones a catas virtuales y experiencias presenciales con sommeliers y prod
 </section>
 
 <!-- SECCIÓN: Imagen de fondo con imagen centrada encima -->
-<section class="position-relative" style="background-image: url('imagenes/FONDO_BORDO.png'); background-size: cover; background-position: center; height: 500px;">
+<section class="position-relative" style="background-image: url('imagenes/FONDO_BORDO.png'); background-size: cover; background-position: center; height: 800px;">
   <div class="position-absolute top-50 start-50 translate-middle text-center">
     <img src="imagenes/display.png" alt="Imagen centrada" class="img-fluid" style="width: 80vw; max-width: 1200px;">
   </div>
 </section>
 
 
-
-<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded" alt="Imagen">
-    </div>
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h3 class="display-6" class="h3-custom">Título flexible</h3>
-      <p class="lead-custom">Podés usar este bloque para presentar información destacada acompañada de una imagen.</p>
-      <a href="#" class="btn btn-primary">Explorar</a>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN E: Beneficios con íconos centrados (Bootstrap Icons) -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Alto rendimiento, tecnología avanzada</h2>
-  <div class="row">
-    <!-- Beneficio 1 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-cpu-fill fs-1 mb-3 text-primary"></i>
-      <h5>Electrónica mejorada</h5>
-      <p class="p-custom">Nuestras baterías están diseñadas para durar más y brindar mayor eficiencia energética.</p>
-    </div>
-    <!-- Beneficio 2 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-person-check-fill fs-1 mb-3 text-primary"></i>
-      <h5>Diseño ergonómico</h5>
-      <p class="p-custom">Mayor comodidad en el uso prolongado sin comprometer el rendimiento.</p>
-    </div>
-    <!-- Beneficio 3 -->
-    <div class="col-md-4 mb-4">
-      <i class="bi bi-gear-fill fs-1 mb-3 text-primary"></i>
-      <h5>Motor optimizado</h5>
-      <p class="p-custom">Más potencia y velocidad para trabajar con eficiencia como nunca antes.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN F: Beneficios sobre fondo de color con íconos de Bootstrap -->
-<section class="section-spacing text-center py-5">
+<!-- PREGUNTAS FRECUENTES -->
+<section id="faq" class="py-5" style="background-color: #F2E9D8;">
   <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">Beneficios del producto</h2>
+    <h2 class="text-center mb-4" style="font-weight: 700; color: #333;">Preguntas Frecuentes</h2>
     <div class="row">
-      <!-- Ítem 1 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-speedometer2 fs-1 mb-3 text-dark"></i>
-        <h5>Velocidad</h5>
-        <p class="p-custom">Procesos más rápidos y eficientes gracias a nuestra tecnología.</p>
-      </div>
-      <!-- Ítem 2 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-battery-full fs-1 mb-3 text-dark"></i>
-        <h5>Durabilidad</h5>
-        <p class="p-custom">Componentes diseñados para resistir y durar en el tiempo.</p>
-      </div>
-      <!-- Ítem 3 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-tools fs-1 mb-3 text-dark"></i>
-        <h5>Mantenimiento simple</h5>
-        <p class="p-custom">Fácil de usar y mantener, ideal para cualquier usuario.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
-<section class="section-spacing container text-center py-5">
-  <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">¿Por qué elegirnos?</h2>
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-truck fs-1 mb-3 text-primary"></i>
-        <h5>Entrega rápida</h5>
-        <p class="p-custom">Recibí tu producto en tiempo récord con envíos ágiles y seguros.</p>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-headset fs-1 mb-3 text-primary"></i>
-        <h5>Atención personalizada</h5>
-        <p class="p-custom">Te acompañamos en todo el proceso con soporte real y humano.</p>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4 shadow-sm">
-        <i class="bi bi-shield-lock fs-1 mb-3 text-primary"></i>
-        <h5>Seguridad garantizada</h5>
-        <p class="p-custom">Tu información y tu compra protegidas en cada paso.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <!-- Columna izquierda -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionLeft">
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                ¿Puedo elegir qué vino recibir?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+              <div class="accordion-body">Actualmente no, pero curamos cada caja con criterio temático mensual.</div>
+            </div>
+          </div>
 
-<!-- TEAM: Presentación del equipo -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Equipo</h2>
-  <p class="p-custom">Personas clave detrás del proyecto.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-    <!-- Cada columna es un integrante -->
-    <div class="col-md-4 mb-4">
-      <img src="https://imageplaceholder.net/200x200" class="rounded-circle mb-3" alt="Miembro 1">
-      <h5>Nombre Apellido</h5>
-      <p class="p-custom">Rol en el equipo</p>
-    </div>
-  </div>
-</section>
-<!-- /TEAM -->
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                ¿Cómo funciona el sistema WineSwap?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+              <div class="accordion-body">Podés intercambiar artículos no deseados con otros suscriptores desde tu panel.</div>
+            </div>
+          </div>
 
-<!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Testimonios</h2>
-  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
-  <div class="row">
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-<!-- /TESTIMONIALS -->
-
-<!-- GALERÍA A: Grid clásico de 3 columnas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de imágenes</h2>
-  <p class="mb-5">Una estructura simple para mostrar imágenes de manera ordenada.</p>
-  <div class="row g-4">
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
-    <div class="col-md-4"><img src="https://imageplaceholder.net/400x300" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
-  </div>
-</section>
-
-<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
-<section class="section-spacing container py-5">
-  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
-  
-  <div class="masonry__container">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
-    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
-  </div>
-</section>
-
-<!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería deslizante</h2>
-  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 1">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 2">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 4">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 5">
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 6">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 7">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 8">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 9">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 10">
-        </div>
-      </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-
-<!-- GALERÍA D: Carrusel con imagen + texto encima -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería con textos</h2>
-  <div id="carouselGaleriaD" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 1">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 1</h4>
-              <p class="lead-custom">Descripción breve sobre esta imagen.</p>
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                ¿Qué pasa si recibo una botella dañada?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+              <div class="accordion-body">Escribinos dentro de las 48 h y gestionamos el reemplazo sin costo.</div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="position-relative">
-          <img src="https://imageplaceholder.net/800x400" class="img-fluid img-rounded w-100 rounded" alt="Imagen 2">
-          <div class="position-absolute top-0 start-0 p-4 bg-dark bg-opacity-50 text-white w-100 h-100 d-flex align-items-center justify-content-start text-start">
-            <div>
-              <h4 class="fw-bold" class="h4-custom">Título 2</h4>
-              <p class="lead-custom">Otra descripción diferente para esta imagen.</p>
+
+      <!-- Columna derecha -->
+      <div class="col-md-6">
+        <div class="accordion" id="accordionRight">
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                ¿Puedo cambiarme de plan o cancelar mi suscripción?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+              <div class="accordion-body">Sí, desde tu cuenta podés hacer cambios o cancelaciones en cualquier momento.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                ¿Qué pasa si no estoy en casa cuando llega mi caja?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+              <div class="accordion-body">El correo reprogramará una segunda entrega sin costo adicional.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                ¿Realizan envíos a todo el país?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+              <div class="accordion-body">Sí, hacemos envíos a todas las provincias de Argentina.</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
 
-
-<!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Galería de historias</h2>
-  <div class="row g-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-     <div class="col-md-3">
-      <div class="card h-100">
-        <img src="https://imageplaceholder.net/400x300" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text small">Una breve descripción o fragmento de historia que acompaña la imagen.</p>
-        </div>
-      </div>
-    </div>
-    <!-- repetir para más -->
-  </div>
-</section>
-
-<!-- CTA: Llamado a la acción final -->
-<section class="section-spacing container text-center my-5">
-  <h2 class="h2-custom">¿Listo para empezar?</h2>
-  <p class="p-custom">Texto para motivar acción.</p>
-  <a href="#" class="btn btn-dark mt-4">Comenzá Ahora</a>
-</section>
-<!-- /CTA -->
-
-<!-- PRICING: Tabla de precios o planes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes o Precios</h2>
-  <p class="p-custom">Comparación de planes.</p>
-  <div class="row mt-5">
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
-    </div>
-    <!-- Cada columna es un plan -->
-    <div class="col-md-4">
-      <div class="card p-4 h-100">
-        <h5>Plan Básico</h5>
-        <p class="display-6">$100</p>
-        <ul class="list-unstyled">
-          <li>✔ Servicio básico 1</li>
-          <li>✔ Servicio básico 2</li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark mt-3">Elegir</a>
-      </div>
     </div>
   </div>
 </section>
-<!-- /PRICING -->
 
-<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Planes de Suscripción</h2>
-  <p class="p-custom">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
-  
-  <div class="row mt-5">
-    
-    <!-- Card: Plan Básico -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Básico</h5>
-        <p class="display-6 text-primary">$49.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Básico">
 
-        <!-- Descripción -->
-        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Acceso limitado a contenido</li>
-          <li>✔ Soporte básico</li>
-          <li>✔ Recursos descargables</li>
-          <li>✔ Actualizaciones mensuales</li>
-        </ul>
+<!-- OPINIONES: Testimonios de clientes -->
+<section id="opiniones" class="py-5" style="background-color: #F2E9D8;">
+  <div class="container text-center">
+    <h2 class="h2-custom mb-5" style="color: #4B2E2E;">Lo que dicen nuestros clientes</h2>
+    <div class="row justify-content-center">
 
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Pro (Recomendado) -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100 border border-primary">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Pro <span class="badge bg-primary ms-2">Recomendado</span></h5>
-        <p class="display-6 text-primary">$55.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Pro">
-
-        <!-- Descripción -->
-        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan básico</li>
-          <li>✔ Soporte prioritario</li>
-          <li>✔ Acceso a workshops</li>
-          <li>✔ Herramientas premium</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Full -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h5 class="text-uppercase">Plan Full</h5>
-        <p class="display-6 text-primary">$60.000 <small>/ mes</small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="https://imageplaceholder.net/300x200" class="img-fluid img-rounded my-3" alt="Plan Full">
-
-        <!-- Descripción -->
-        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>✔ Todo lo del plan Pro</li>
-          <li>✔ Consultorías personalizadas</li>
-          <li>✔ Acceso anticipado a lanzamientos</li>
-          <li>✔ Certificados exclusivos</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- /PLANES DE SUSCRIPCIÓN -->
-
-<!-- FAQS: Preguntas frecuentes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Preguntas Frecuentes</h2>
-  <p class="p-custom">Respuestas a dudas comunes.</p>
-  <div class="accordion mt-5" id="faqAccordion">
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
+      <!-- Opinión 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="border-radius: 10px; background-color: #FFF9F1;">
+          <p style="font-size: 0.95rem;">"Me sorprendió la calidad de los vinos. La presentación es hermosa y el material de cata me ayudó a aprender un montón. ¡Recomiendo UvaClub 100%!"</p>
+          <h6 class="mt-3 mb-0" style="font-weight: bold;">Mariana R.</h6>
+          <small>Buenos Aires</small>
         </div>
       </div>
-    </div>
-    <!-- Ítem de pregunta -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-          ¿Qué incluye el servicio?
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Explicación detallada.
+
+      <!-- Opinión 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="border-radius: 10px; background-color: #FFF9F1;">
+          <p style="font-size: 0.95rem;">"Es como recibir un regalo todos los meses. Me encanta compartirlo con amigos y descubrir etiquetas nuevas que no consigo en el súper."</p>
+          <h6 class="mt-3 mb-0" style="font-weight: bold;">Leandro M.</h6>
+          <small>Córdoba</small>
         </div>
       </div>
+
+      <!-- Opinión 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="border-radius: 10px; background-color: #FFF9F1;">
+          <p style="font-size: 0.95rem;">"Muy buena curaduría de vinos. Además el equipo de atención es súper amable, me ayudaron a cambiar una dirección sin problemas."</p>
+          <h6 class="mt-3 mb-0" style="font-weight: bold;">Sofía T.</h6>
+          <small>Rosario</small>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- /FAQS -->
 
-<!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-      </form>
-    </div>
-  </div>
-</section>
-<!-- /CONTACT FORM -->
 
 <!-- FOOTER: Pie de página -->
 <footer class="text-center py-4">
