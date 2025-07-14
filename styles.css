@@ -81,20 +81,22 @@ body {
   font-weight: 300;  /* Light */
   font-style:
   font-size: 1.25rem;
-  line-height: 1.6;
+  line-height: 0.9; /* Ajustalo según se vea mejor */
+  margin-top: 0.2em; /* Opcional también */
 }
 
 
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 4.5rem;
   color: var(--dark-color);
+    line-height: 0.9; /* Menor valor = menor espacio entre renglones */
+  margin-bottom: 0.5em; /* Opcional, para acercar la bajada al título */
 }
 
 p {
   font-size: 1rem;
-  color: #6c757d;
+  color: #000000;
 }
 
 /* Botones */
@@ -153,7 +155,7 @@ section {
 
 .services-bg {
   position: relative;
-  background-image: url('imagenes/FONDO_BORDO_CAJAS.png');
+  background-image: url('imagenes/FONDO_DE_CAJAS.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +171,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 200px;
   background: linear-gradient(to bottom, #F2E9D8 0%, rgba(242, 233, 216, 0) 100%);
   z-index: 1;
   pointer-events: none;
@@ -182,7 +184,7 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 160px;
+  height: 200px;
   background: linear-gradient(to top, #F2E9D8 0%, rgba(242, 233, 216, 0) 100%);
   z-index: 1;
   pointer-events: none;
@@ -265,7 +267,7 @@ section h2::after {
   font-weight: 300;
   font-style: ;
   font-size: 0.85rem; /* antes era 1rem o más */
-  line-height: 1.4;
+  line-height: 0.9;
   margin-bottom: 1rem;
 }
 
@@ -387,7 +389,7 @@ img.rounded-circle {
 .p-custom {
   font-size: 2rem;
   color: var(--dark-color);
-  line-height: 1.6;
+  line-height: 1.1;
 }
 
 .lead-custom {
@@ -470,14 +472,17 @@ body {
   overflow: hidden;
 }
 .hero-bg {
-  position: relative;
-  min-height: 50vh;1
   background-image: url('imagenes/fondo_de_hero.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 60px; /* para que tenga aire abajo */
 }
+
+
+
+
 
 /* Degradado hacia abajo */
 .hero-bg::after {
@@ -512,9 +517,128 @@ body {
 }
 
 
+.por-que-uvaclub {
+  background-color: #F2E9D8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.seccion-titulo {
+  font-family: 'IvyPresto Display', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.seccion-subtitulo {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.img-rounded {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+}
+
+
+.por-que-uvaclub::before {
+  top: 40%;
+  left: 0;
+}
+
+.por-que-uvaclub::after {
+  bottom: 10%;
+  right: 0;
+}
+
+
+.section-unite {
+  background-image: url('imagenes/FONDO_DE_CAJAS.png'); /* tu textura con mancha */
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.caja-img {
+  max-width: 330px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.plan-card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.beneficios {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.plan-btn {
+  background-color: #C34751;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+}
+
+.text-oro { color: #C34751; }
+.text-rubi { color: #C34751; }
+.text-platino { color: #C34751; }
+
+s {
+  color: #ababab;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 360px;
+  color: #000; /* ✅ Esto asegura que todo el texto sea negro */
+}
+
+.services-bg {
+  position: relative;
+  background-image: url('imagenes/FONDO_DE_CAJAS.png');
+  background-size: cover;  /* <--- o usa 'cover' si querés que rellene */
+  background-repeat: no-repeat;
+  background-position: center; /* o center center según el diseño */
+  background-color: #F2E9D8; /* color de fondo de base */
+}
+
+<img src="imagenes/VIÑEDO.png" alt="Viñedo con uvas" 
+     class="img-fluid" 
+     style="width: 100%; height: auto; display: block;">
 
 
 
+     
 html {
   scroll-behavior: smooth;
 }
@@ -524,6 +648,37 @@ html {
 /* ============================== */
 /* MEDIA QUERIES */
 /* ============================== */
+.hero-section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .h2-custom {
+    font-size: 1.5rem;
+  }
+
+  .h4-custom {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .hero-text {
+    padding-left: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+  .img-hero {
+    max-width: 100% !important;
+  }
+}
+
 
 @media (max-width: 768px) {
   h1 {
