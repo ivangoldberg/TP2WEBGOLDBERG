@@ -37,7 +37,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-gradient">
   <div class="container">
     <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="Home.html">
+    <a class="navbar-brand" href="#">
       <img src="imagenes/logo.png" alt="UvaClub" style="height: 40px;">
     </a>
     <!-- Botón para mostrar menú en mobile -->
@@ -59,50 +59,81 @@
 <!-- /NAVBAR -->
 
 
-<!-- CAJA RUBÍ: Sección de suscripción destacada -->
-<section class="rubí-section py-5" style="
-  background-image: url('imagenes/fondo_de_hero.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-">
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-bg hero-section d-flex align-items-center pb-2">
 
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row pt-4">
       
       <!-- Texto -->
-      <div class="col-lg-6 px-5">
-        <h2 class="mb-3" style="font-size: 48px; font-weight: 600;">RUBÍ</h2>
-        
-        <div class="d-flex align-items-center mb-3">
-          <a href="DETALLE.html" class="btn btn-fijo me-3" style="background-color: #C34751; color: white; font-weight: 500;">
-            Suscribirme
-          </a>
-          <span style="font-size: 22px; font-weight: 500;">100.00$/mes <span style="font-weight: 300;"></span>
+      <div class="col-lg-6">
+<div class="hero-text" style="max-width: 460px; padding-left: 80px;">
+          <h1 class="h1-custom mb-3">
+            <span class="ivy-light">SÉ PARTE</span><br>
+            <span class="ivy-light">DEL <span class="ivy-semibold-italic">CLUB</span></span>
+          </h1>
+          <p class="p-custom mb-4">Cada caja, un viaje sensorial.<br>Cada botella, una historia.</p>
+<a href="DETALLE.html" class="btn btn-dark" style="background-color: #C34751; color: white; font-weight: 300;">Suscribirme</a>
+
         </div>
-        
-        <p style="font-size: 20px; font-weight: 400;">
-          <span style="font-weight: 600;">3 vinos <span style="color: #C34751;">internacionales</span></span>
-        </p>
-        
-        <ul style="font-size: 16px; line-height: 1.8;">
-          <li>Fichas de cata impresas</li>
-          <li>QR a video de sommelier</li>
-          <li>10% de descuento en vinotecas asociadas</li>
-          <li>Decantación de quesos</li>
-          <li>Entrada a fiestas UvaClub</li>
-        </ul>
       </div>
 
       <!-- Imagen -->
-      <div class="col-lg-6 text-center">
-        <img src="imagenes/caja_abierta.png" alt="Caja Rubí UvaClub" style="max-width: 100%; height: auto;">
+      <div class="col-lg-6 text-end">
+        <img src="imagenes/IMAGEN HERO.png" class="img-hero" alt="Imagen Hero">
       </div>
 
     </div>
   </div>
 </section>
 
+
+
+
+<!-- ABOUT: Nuestro servicio -->
+<section class="section-spacing text-center" style="background-color: #F2E9D8; padding: 80px 0;">
+  <div class="container">
+
+    <!-- Decoración + Título -->
+    <div class="d-flex align-items-center justify-content-center mb-5">
+      <img src="imagenes/Deco_flecha_izq.png" alt="Decoración izquierda" style="height: 12px; margin-right: 20px;">
+      <h2 class="h2-custom" style="margin: 0;">Nuestro servicio</h2>
+      <img src="imagenes/Deco_flecha_izq.png" alt="Decoración derecha" style="height: 12px; margin-left: 20px; transform: scaleX(-1);">
+    </div>
+
+    <!-- Íconos y textos -->
+    <div class="row justify-content-center">
+
+      <!-- Icono 1 -->
+      <div class="col-md-4 mb-4">
+        <img src="imagenes/icono1.png" alt="Comunidad" style="width: 100px; margin-bottom: 15px;">
+        <h4 class="h4-custom" style="margin-top: 0;">Comunidad exclusiva</h4>
+        <p style="max-width: 300px; margin: 0 auto;">
+          Formá parte de un círculo donde el vino se comparte con pasión.
+        </p>
+      </div>
+
+      <!-- Icono 2 -->
+      <div class="col-md-4 mb-4">
+        <img src="imagenes/icono2.png" alt="Selección premium" style="width: 50px; margin-bottom: 15px;">
+        <h4 class="h4-custom" style="margin-top: 0;">Selección premium</h4>
+        <p style="max-width: 300px; margin: 0 auto;">
+          Cada caja es una pieza de colección para quienes saben disfrutar.
+        </p>
+      </div>
+
+      <!-- Icono 3 -->
+      <div class="col-md-4 mb-4">
+        <img src="imagenes/icono3.png" alt="Entrega mensual" style="width: 100px; margin-bottom: 15px;">
+        <h4 class="h4-custom" style="margin-top: 0;">Entrega mensual</h4>
+        <p style="max-width: 300px; margin: 0 auto;">
+          Vinos seleccionados, fichas y maridaje sin mover un dedo.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
@@ -112,129 +143,77 @@
   <div class="row align-items-center">
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imagenes/botellas.png" class="content-img" alt="Imagen ilustrativa">
+      <img src="imagenes/quienes-somos.png" class="content-img" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
     <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Vinos del mes</h2>
-      <p class="lead-custom">Este mes celebramos el Malbec, emblema de nuestras bodegas y expresión de los mejores terroirs. </p>
-            <p class="lead-custom">Cada botella elegida resalta matices únicos que invitan a descubrir la intensidad y elegancia de este varietal.</p>
+      <h2 class="display-5" class="h2-custom">¿Quienes somos?</h2>
+      <p class="lead-custom">En UvaClub somos curadores de experiencias. Seleccionamos vinos con identidad, origen y carácter para quienes buscan disfrutar sin esfuerzo. </p>
+            <p class="lead-custom">Nuestro equipo de sommeliers elige cada botella pensando en sorprender, enseñar y emocionar. Más que un club, somos una comunidad que celebra el vino como arte, cultura y ritual compartido.</p>
     </div>
   </div>
 </section>
 
-<!-- ABOUT: Nuestro servicio -->
-<section class="section-spacing text-center" style="background-color: #F2E9D8; padding: 80px 0;">
-  <section class="py-5" style="
-    background-image: url('imagenes/FONDO_BORDO.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  ">
-   <div class="container" style="color: white !important;"> <!-- FORZAMOS BLANCO -->
-
-    <div class="container">
-
-      <!-- Decoración + Título -->
-      <div class="d-flex align-items-center justify-content-center mb-5">
-        <img src="imagenes/Deco_flecha_izq.png" alt="Decoración izquierda" style="height: 12px; margin-right: 20px;">
-        <h2 class="h2-custom" style="color: white;",>Sabores que acompañan</h2>
-        <img src="imagenes/Deco_flecha_izq.png" alt="Decoración derecha" style="height: 12px; margin-left: 20px; transform: scaleX(-1);">
-      </div>
-
-      <!-- Íconos y textos -->
-      <div class="row justify-content-center">
-
-        <!-- Icono 1 -->
-        <div class="col-md-4 mb-4">
-          <img src="imagenes/brie.png" alt="Brie de Meauxa" style="width: 100px; margin-bottom: 15px;">
-          <h4 class="h4-custom" style="color: white;">Brie de Meauxa</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            Cremoso, con corteza blanca enmohecida. Suave y elegante.
-          </p>
-        </div>
-
-        <!-- Icono 2 -->
-        <div class="col-md-4 mb-4">
-          <img src="imagenes/manchego.png" alt="Manchego Curado" style="width: 100px; margin-bottom: 15px;">
-          <h4 class="h4-custom" style="color: white;">Manchego Curado</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            Firme, de oveja, sabor intenso y ligeramente picante. 
-          </p>
-        </div>
-
-        <!-- Icono 3 -->
-        <div class="col-md-4 mb-4">
-          <img src="imagenes/pecorino.png" alt="Pecorino Romano" style="width: 100px; margin-bottom: 15px;">
-          <h4 class="h4-custom" style="color: white;">Pecorino Romano</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            De oveja, firme y salado. Ideal para acompañar vinos de acidez marcada.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-</section>
-
-<!-- WINESWAP: Intercambio de botellas -->
-<section class="py-5" style="background-color: #F2E9D8;">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Columna de texto -->
-      <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5 px-4 text-start">
-        <h2 class="h2-custom ivy-light mb-4">WineSwap</h2>
-        <p class="lead-custom" style="font-family: 'Roboto', sans-serif;">
-          <b>¿Tenés una botella repetida o simplemente querés probar otra cosa?</b><br>
-          Intercambiá vinos con otros miembros del club de forma simple y sin costo adicional.
-        </p>
-        <p class="lead-custom" style="font-family: 'Roboto', sans-serif;">
-          Elegí, solicitá el cambio y recibí una nueva selección en tu próxima caja.
-        </p>
-        <a href="DETALLE.html" class="btn btn-dark" style="background-color: #C34751; color: white; font-weight: 300;">Intercambiar</a>
-      </div>
-
-      <!-- Imagen a la derecha -->
-      <div class="col-lg-6 text-center">
-        <img src="imagenes/botellla_swap.png" alt="Imagen ilustrativa" style="max-width: 290px; height: auto;">
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- PLANES DESTACADOS -->
-<section class="py-5" style="
-
-">
-  <div class="container text-center">
-    <h2 class="h2-custom ivy-light text-center mb-5">Tal vez te interese</h2>
-    
+<!-- UNITE AL CLUB -->
+<section class="services-bg section-unite">
+  <div class="container text-center section-spacing">
+    <h2 class="h2-custom mb-5" style="color: white;" >Unite al club</h2>
     <div class="row justify-content-center">
 
-      <!-- Caja Oro -->
-      <div class="col-md-4 mb-4">
+      <!-- CAJA ORO -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
         <div class="card plan-card">
           <img src="imagenes/caja1.png" class="mb-3 caja-img" alt="Caja Oro">
           <h5><span class="ivy-light">CAJA <span class="ivy-semibold-italic">ORO</span></span></h5>
+          <p><b>3 vinos <span class="text-oro">nacionales</span></b></p>
+          <p class="beneficios">
+            Fichas de cata impresas<br>
+            QR a video de sommelier<br>
+            10% de descuento en vinotecas asociadas<br>
+            decantación de quesos<br>
+            <s>Entrada a fiestas UvaClub</s><br>
+            <s>Copa coleccionable del mes</s>
+          </p>
           <p class="precio">50.00$ <b>/mes</b></p>
-          <a href="#" class="btn plan-btn">Ver plan</a>
+          <a href="DETALLE.html" class="btn plan-btn">Ver plan</a>
         </div>
       </div>
 
-      <!-- Caja Platino -->
-      <div class="col-md-4 mb-4">
+      <!-- CAJA RUBÍ -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card plan-card">
+          <img src="imagenes/caja2.png" class="mb-3 caja-img" alt="Caja Rubí">
+          <h5><span class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h5>
+          <p><b>3 vinos <span class="text-rubi">internacionales</span></b></p>
+          <p class="beneficios">
+            Fichas de cata impresas<br>
+            QR a video de sommelier<br>
+            10% de descuento en vinotecas asociadas<br>
+            decantación de quesos<br>
+            Entrada a fiestas UvaClub<br>
+            <s>Copa coleccionable del mes</s>
+          </p>
+          <p class="precio">100.00$ <b>/mes</b></p>
+          <a href="DETALLE.html" class="btn plan-btn">Ver plan</a>
+        </div>
+      </div>
+
+      <!-- CAJA PLATINO -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
         <div class="card plan-card">
           <img src="imagenes/caja3.png" class="mb-3 caja-img" alt="Caja Platino">
           <h5><span class="ivy-light">CAJA <span class="ivy-semibold-italic">PLATINO</span></span></h5>
+          <p><b>3 vinos <span class="text-platino">exclusivos</span></b></p>
+          <p class="beneficios">
+            Fichas de cata impresas<br>
+            QR a video de sommelier<br>
+            10% de descuento en vinotecas asociadas<br>
+            decantación de quesos<br>
+            Entrada a fiestas UvaClub<br>
+            Copa coleccionable del mes
+          </p>
           <p class="precio">150.00$ <b>/mes</b></p>
-          <a href="#" class="btn plan-btn">Ver plan</a>
+          <a href="DETALLE.html" class="btn plan-btn">Ver plan</a>
         </div>
       </div>
 
@@ -243,21 +222,81 @@
 </section>
 
 
-<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
+
+
+<!-- SECCIÓN B: Imagen derecha, texto izquierda -->
 <section class="section-spacing container">
   <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="imagenes/invierno.png" class="img-fluid img-rounded" alt="Imagen" style="max-width: 310px; height: auto;">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom display-5">Beneficios</h2>
+      <p class="lead-custom"><b>Material de cata completo</b>
+Incluye fichas sensoriales impresas y acceso a videos guiados con degustaciones detalladas y consejos del sommelier.</p>
+      <p class="lead-custom"><b>Eventos privados y masterclasses</b>
+Invitaciones a catas virtuales y experiencias presenciales con sommeliers y productores.</p>
     </div>
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h2 class="display-5" class="h2-custom">Invierno apasionante</h2>
-      <p class="lead-custom">El invierno trae consigo bajas temperaturas y la necesidad de disfrutar de momentos acogedores en casa.<br>
-         ¿Qué mejor manera de acompañar esas noches que un buen vino tinto?</p>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagenes/Beneficios.png" class="content-img" alt="Imagen ilustrativa">
     </div>
   </div>
 </section>
+
+<!-- SECCIÓN C: Título centrado, imagen izquierda, texto derecha -->
+<section class="section-spacing container text-center">
+  <!-- Título centrado arriba -->
+    <div class="d-flex align-items-center justify-content-center mb-5">
+      <img src="imagenes/Deco_flecha_izq.png" alt="Decoración izquierda" style="height: 12px; margin-right: 20px;">
+      <h2 class="h2-custom" style="margin: 0;">WineSwap</h2>
+      <img src="imagenes/Deco_flecha_izq.png" alt="Decoración derecha" style="height: 12px; margin-left: 20px; transform: scaleX(-1);">
+    </div>
+
+  <!-- Contenido con imagen izquierda y texto derecha -->
+  <div class="row align-items-center text-start">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imagenes/botellla_swap.png" class="content-img" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <p class="lead-custom"><b>¿Tenés una botella repetida o simplemente querés probar otra cosa?</b>
+         Intercambiá vinos con otros miembros del club de forma simple y sin costo adicional.</p>
+              <p class="lead-custom">Elegí, solicitá el cambio y recibí una nueva selección en tu próxima caja..</p>
+<a href="DETALLE.html" class="btn btn-dark" style="background-color: #C34751; color: white; font-weight: 300;">Intercambiar</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: Imagen de fondo con imagen centrada encima -->
+<section class="position-relative" style="background-image: url('imagenes/FONDO_BORDO.png'); background-size: cover; background-position: center; height: 800px;">
+  <div class="position-absolute top-50 start-50 translate-middle text-center">
+    <img src="imagenes/display.png" alt="Imagen centrada" class="img-fluid" style="width: 80vw; max-width: 1200px;">
+  </div>
+</section>
+
+
+<!-- SECCIÓN: ¿Por qué UvaClub? -->
+<section class="por-que-uvaclub text-center py-5">
+  <div class="container">
+    <h2 class="seccion-titulo mb-3">¿Por qué UvaClub?</h2>
+    <p class="seccion-subtitulo mb-5">
+      En <strong>UvaClub</strong> trabajamos junto a bodegas cuidadosamente seleccionadas que comparten nuestra filosofía: 
+      <strong>elaborar vinos con carácter y autenticidad</strong>
+    </p>
+    <div class="imagen-uva">
+<div class="container-fluid px-0">
+<section class="py-5" style="background-color: #F2E9D8;">
+  <div class="container text-center position-relative">
+    <img src="imagenes/VIÑEDO.png" alt="Viñedos" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px;">
+  </div>
+</section>
+
+</div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- PREGUNTAS FRECUENTES -->
 <section id="faq" class="py-5" style="background-color: #F2E9D8;">
@@ -401,31 +440,6 @@
 </section>
 
 
-
-
-
-<!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-      </form>
-    </div>
-  </div>
-</section>
-<!-- /CONTACT FORM -->
 
 <!-- FOOTER: Pie de página -->
 <footer class="text-center py-4">
