@@ -1010,48 +1010,43 @@ html {
                              /* Y luego usa margin-top en la imagen o en la columna de la imagen */
 }
 
-/* Asegurar que el título del carrusel se muestre correctamente */
-#carruselOpinionesGenerales .h2-custom {
-    color: #333333; /* Un color oscuro para que se vea bien sobre el fondo F2E9D8 */
-    margin-bottom: 3rem; /* Asegurar un buen espacio debajo del título */
+.testimonial-card {
+  padding: 2rem;
+  text-align: left;
+  background-color: white;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  height: 100%;
 }
 
-/* Estilos para las cards dentro del carrusel */
-#opinionesCarouselGeneral .carousel-item .card {
-  max-width: 600px; /* Ya lo tienes, pero asegúrate que se aplica */
-  width: 100%;      /* Asegura que ocupe el ancho disponible */
-  min-height: 250px; /* Establece una altura mínima para que no se "aplasten" si el texto es corto */
-  display: flex;    /* Usa flexbox para alinear contenido verticalmente */
-  flex-direction: column; /* Apila el contenido en columna */
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido (útil para texto pequeño) */
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin: 0 auto;   /* Centra la card horizontalmente dentro de su item */
-  padding: 20px;    /* Ajusta el padding si lo necesitas */
+.testimonial-card p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 1.5rem;
 }
 
-/* Asegurar que el texto dentro de la card tenga un max-width para evitar que se estire demasiado */
-#opinionesCarouselGeneral .carousel-item .card p.texto-roboto {
-    max-width: 90%; /* Limita el ancho del párrafo para evitar desbordamiento */
-    margin-left: auto; /* Centra el párrafo */
-    margin-right: auto; /* Centra el párrafo */
-    text-align: center; /* Asegura el texto centrado */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
 }
 
-/* Asegurar que los controles (flechas) del carrusel sean visibles */
-#opinionesCarouselGeneral .carousel-control-prev-icon,
-#opinionesCarouselGeneral .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que se vean */
-    border-radius: 50%; /* Hacerlos redondos */
-    padding: 15px; /* Un poco de padding para que sean más grandes */
-    /* Asegúrate de que el background-image por defecto de Bootstrap siga funcionando */
-    background-size: 50%; /* Ajusta el tamaño del icono de la flecha dentro del círculo */
+.testimonial-footer img {
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
-#opinionesCarouselGeneral .carousel-control-prev-icon:hover,
-#opinionesCarouselGeneral .carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer al pasar el mouse */
+.testimonial-footer div span {
+  font-size: 0.9rem;
+  color: #555;
 }
+
+
+
 
 /* ============================== */
 /* MEDIA QUERIES */
