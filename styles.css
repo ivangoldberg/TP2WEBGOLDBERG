@@ -88,7 +88,7 @@ body {
 
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 6.5rem;
   color: var(--dark-color);
     line-height: 0.9; /* Menor valor = menor espacio entre renglones */
   margin-bottom: 0.5em; /* Opcional, para acercar la bajada al título */
@@ -108,10 +108,7 @@ p {
   font-size: large;
 }
 
-.btn-dark {
-  background-color: #EEDEA0;
-  border: none;
-}
+
 
 
 .btn-large-black {
@@ -120,8 +117,12 @@ p {
   padding: 0.75rem 1rem; /* opcional: agranda el botón también */
 }
 
+.btn-dark {
+  background-color: #C34751;
+}
+
 .btn-dark:hover {
-  background-color: #560e0e;
+  background-color: #82343a;
 }
 
 .btn-outline-dark {
@@ -129,10 +130,7 @@ p {
   color: var(--primary-color);
 }
 
-.btn-outline-dark:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
+
 
 
 
@@ -148,13 +146,36 @@ section {
 
 
 }
+.hero-section {
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
+}
+
 .hero-bg {
   background-image: url('imagenes/fondo_de_hero.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   width: 100%;
 }
+
+
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* ⬅️ más chico que antes (era 150px) */
+  background: linear-gradient(to bottom, rgba(242, 233, 216, 0) 0%, #F2E9D8 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
 
 .services-bg {
   position: relative;
@@ -167,31 +188,7 @@ section {
   overflow: hidden;
 }
 
-/* Fade arriba */
-.services-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(to bottom, #F2E9D8 0%, rgba(242, 233, 216, 0) 100%);
-  z-index: 1;
-  pointer-events: none;
-}
 
-/* Fade abajo */
-.services-bg::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(to top, #F2E9D8 0%, rgba(242, 233, 216, 0) 100%);
-  z-index: 1;
-  pointer-events: none;
-}
 
 /* Contenido por encima del fade */
 .services-bg > * {
@@ -306,19 +303,12 @@ form .form-control {
 }
 
 form button.btn-primary {
-  background-color: var(--primary-color);
   border: none;
   width: 100%;
-  border-radius: 50px;
+  border-radius: 10px;
   margin-top: 20px;
 }
 
-/* 9. FOOTER */
-footer {
-  background-color: var(--dark-color);
-  color: #ffffff;
-  font-size: 0.9rem;
-}
 
 /* 10. IMÁGENES */
 img.rounded-circle {
@@ -374,7 +364,7 @@ img.rounded-circle {
 }
 
 .h4-custom {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--dark-color);
 }
@@ -387,7 +377,7 @@ img.rounded-circle {
 }
 
 .lead-custom {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--secondary-color);
 }
@@ -595,10 +585,18 @@ body {
   background-color: #C34751;
   color: white;
   font-weight: 600;
-  border-radius: 6px;
-  padding: 6px 20px;
+  border-radius: 10px;
   font-size: 0.9rem;
+  width: fit-content;
+  margin: auto;
 }
+
+.plan-btn:active, .plan-btn:hover {
+  background-color: #801B26;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
 
 .text-oro { color: #C34751; }
 .text-rubi { color: #C34751; }
@@ -631,13 +629,429 @@ s {
      style="width: 100%; height: auto; display: block;">
 
 
+button {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
 
      
 html {
   scroll-behavior: smooth;
 }
 
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
+.slide-track {
+  display: flex;
+  width: calc(100px * 20); /* cantidad de imágenes * 2 (por duplicación si se hace scroll infinito) */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* o "cover" si querés que se recorten */
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1000px); } /* depende del total de ancho de las slides */
+}
+
+/* Contenedor principal para el efecto parallax */
+.parallax-cta-wrapper {
+  position: relative; /* Necesario para el pseudo-elemento */
+  height: 450px; /* Altura de la sección. Ajusta si es necesario. */
+  display: flex;
+  justify-content: center; /* Centra el contenido (la sección interna) */
+  align-items: center; /* Centra el contenido (la sección interna) */
+  overflow: hidden; /* Muy importante para el efecto parallax */
+}
+
+.parallax-cta-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('imagenes/FONDO_BORDO.png'); /* ¡IMPORTANTE: Reemplaza con la ruta a tu imagen! */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* CLAVE para el efecto parallax */
+  filter: brightness(0.6); /* Oscurece la imagen para legibilidad */
+  z-index: -1; /* Envía la imagen al fondo */
+}
+
+/* Estilos para tu sección interna (la que ya tenías) */
+.parallax-cta-wrapper .section-spacing {
+  /* Restablece o ajusta los estilos de Bootstrap para el container-fluid si es necesario */
+  /* Por ejemplo, si container-fluid tiene padding que no quieres aquí: */
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; /* Asegura que la sección interna ocupe el 100% del wrapper */
+  max-width: 100%; /* Elimina cualquier límite de ancho */
+
+  /* Estilos específicos de tu sección (los que ya tenías o quieres) */
+  text-align: center;
+  /* my-5 (margin-top/bottom) de Bootstrap se aplicará aquí si lo dejas */
+
+  /* Asegura que el contenido de la sección esté por encima del fondo */
+  position: relative;
+  z-index: 1;
+}
+
+/* Asegura que el texto y el botón de esta sección se vean bien */
+.parallax-cta-wrapper .h2-custom,
+.parallax-cta-wrapper .p-custom {
+  color: white; /* Color del texto para contrastar con el fondo oscuro */
+
+}
+
+/* Opcional: Ajustes de responsividad para el contenedor principal */
+@media (max-width: 768px) {
+  .parallax-cta-wrapper {
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-cta-wrapper {
+    height: 300px;
+  }
+  .parallax-cta-wrapper .h2-custom {
+    font-size: 2rem;
+  }
+  .parallax-cta-wrapper .p-custom {
+    font-size: 1rem;
+  }
+}
+
+.centered-section-wrapper {
+  max-width: 1200px; /* Adjust this value to your desired maximum width */
+  margin: 0 auto; /* This is the key for horizontal centering */
+  padding: 0 15px; /* Optional: adds some padding on smaller screens */
+}
+
+/* Ensure the Bootstrap .container within this wrapper behaves correctly */
+.centered-section-wrapper .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Optional: Adjust for responsiveness if needed, though Bootstrap's row/col handles most of it */
+@media (max-width: 1200px) {
+  .centered-section-wrapper {
+    max-width: 100%; /* Allows it to expand to full width on smaller screens */
+  }
+}
+
+/* La sección principal donde irá la imagen PNG en el fondo */
+#wineswap-content-section {
+  position: relative; /* ¡CRUCIAL! Debe ser 'relative' o 'absolute' para que z-index funcione en sus hijos absolutos */
+  overflow: hidden;   /* Recomendado */
+  /*
+  IMPORTANTE: Si tienes un background-color directo en esta sección (ej: background-color: white;),
+  está cubriendo tu mancha.
+  OPCIONES:
+  1. Eliminar el background-color si no lo necesitas.
+  2. Hacer el background-color semitransparente:
+     background-color: rgba(255, 255, 255, 0.9); // Blanco con 90% de opacidad
+  */
+}
+
+#wineswap-container {
+  width: 100%;
+  position: relative;
+}
+
+/* El pseudo-elemento que contendrá tu imagen PNG de fondo */
+#wineswap-container::before {
+  content: "";
+  position: absolute; /* ¡CRUCIAL! Posicionamiento absoluto respecto a la sección padre */
+
+  /* Asegúrate de que al menos un par de estas propiedades de posicionamiento estén presentes */
+  bottom: 0;
+  right: 0;
+  /* top: 0; left: 0; etc. */
+
+  width: 300px; /* Ajusta según el tamaño de tu PNG */
+  height: 250px; /* Ajusta según el tamaño de tu PNG, o 'auto' */
+
+  background-image: url('imagenes/mancha\ 1.png'); /* ¡VUELVE A VERIFICAR ESTA RUTA! */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right; /* O 'bottom right', etc. */
+
+  z-index: 0; /* O -1. Esto lo coloca POR DEBAJO del contenido normal. */
+  pointer-events: none;
+}
+
+/* Asegúrate de que el contenido de la sección tenga un z-index superior y un posicionamiento */
+/* ESTO ES VITAL: Si tu contenido no tiene position:relative/absolute y un z-index más alto, la mancha no se verá */
+#wineswap-content-section .d-flex, /* Para el div del título WineSwap con las flechas */
+#wineswap-content-section .row    /* Para el div del row con la imagen y el texto */
+{
+  position: relative; /* ¡MUY IMPORTANTE! Los elementos deben tener 'position:relative', 'absolute' o 'fixed' para que 'z-index' funcione sobre ellos. */
+  z-index: 1;         /* ¡CRUCIAL! Esto los coloca POR ENCIMA de la mancha (z-index: 0 o -1) */
+  /* Si tu contenido ya tiene un z-index de Bootstrap o de otro lado, asegúrate de que sea mayor que 0 */
+}
+
+/* Revisa si tienes un background-color en la sección con clase 'container' o 'section-spacing'
+   que esté cubriendo todo. */
+/* Por ejemplo, si tienes esto en tu CSS general: */
+/*
+.section-spacing {
+  background-color: white; // <-- ¡Esto podría estar cubriendo la mancha!
+}
+*/
+/* Si es así, hazlo transparente o semitransparente SOLO PARA ESTA SECCIÓN, o ponlo en el #wineswap-content-section */
+/*
+#wineswap-content-section {
+  background-color: rgba(255, 255, 255, 0.9); // Hace el fondo semitransparente para ver la mancha
+}
+*/
+
+/* Ajuste de margen para los íconos en la sección "Nuestro servicio" */
+#nosotros .row.justify-content-center {
+  margin-top: 100px; /* Ajusta este valor (ej: 30px, 80px) según el espacio que desees */
+}
+
+/* Opcional: Si quieres un padding más general en la sección y luego un margen del título
+   Puedes ajustar el padding-bottom del div del título si quieres un control más fino
+   sin depender del margin-top del row de los iconos.
+   Pero la opción de margin-top en el row de los iconos es la más directa para tu solicitud.
+*/
+#nosotros .d-flex.align-items-center.justify-content-center.mb-5 {
+    margin-bottom: 70px; /* Puedes aumentar este mb-5 si lo necesitas, o añadir un padding-bottom */
+}
+
+/* Ajuste de margen para el espacio entre el título y las cards en la sección #contenido */
+#contenido .d-flex.align-items-center.justify-content-center.mb-5 {
+  margin-bottom: 100px; /* Ajusta este valor (ej: 60px, 100px) para controlar el espacio */
+  /* Tu HTML ya tiene mb-5, que es margin-bottom: 3rem (48px por defecto en Bootstrap 5) */
+  /* Al poner 80px, estás sobrescribiendo ese mb-5 y dándole más espacio */
+}
+
+
+/* Ajuste de margen para la sección "¿Por qué UvaClub?" */
+
+/* Reduce el margen inferior del subtítulo */
+.por-que-uvaclub .seccion-subtitulo {
+  margin-bottom: -20px !important; /* Puedes ajustar este valor. Ej: 10px, 30px. */
+                                  /* Usamos !important para asegurar que sobrescriba el mb-5 de Bootstrap si es necesario. */
+}
+
+/* Opcional: Si la imagen está en un contenedor con padding superior, también puedes reducirlo */
+/* Si la imagen está directamente en un div, esto podría no ser necesario,
+   pero si está en una <section> o <div> con padding, esto lo reduce. */
+.por-que-uvaclub .imagen-uva .py-5 { /* Apuntando al contenedor <section class="py-5"> de la imagen */
+  padding-top: 20px !important; /* Reduce el padding superior. Ajusta según necesites. */
+}
+
+/* Asegurarte que el margen superior de la sección .py-5 no sea muy grande */
+.por-que-uvaclub .imagen-uva .py-5.position-relative {
+    margin-top: 0 !important; /* Si hay un margin-top aquí, lo reseteamos */
+}
+/* --- ESTILOS DE COLOR PARA EL FOOTER --- */
+
+/* Fondo del footer */
+.footer {
+  background-color: #7e3333 !important; /* Un gris oscuro, por ejemplo. ¡Cambia a tu color deseado! */
+}
+
+/* Color general del texto en el footer */
+.footer p,
+.footer span,
+.footer .text-muted { /* Asegura que cualquier texto muteado también cambie */
+  color: #DDDDDD !important; /* Un gris claro para el texto. ¡Cambia a tu color deseado! */
+}
+
+/* Color de los enlaces normales en el footer */
+.footer a {
+  color: #FFFFFF !important; /* Blanco para los enlaces. ¡Cambia a tu color deseado! */
+  text-decoration: none; /* Asegura que no tengan subrayado */
+}
+
+/* Color de los enlaces y texto al pasar el ratón (hover) */
+.footer a:hover {
+  color: #C34751 !important; /* Tu color de marca para hover. ¡Cambia a tu color deseado! */
+  text-decoration: none;
+}
+
+/* Color de los íconos de redes sociales */
+.footer .fab {
+  color: #FFFFFF !important; /* Blanco para los íconos. ¡Cambia a tu color deseado! */
+  font-size: 1.5rem; /* Mantener tamaño, si lo tenías */
+  transition: color 0.3s ease; /* Transición para hover */
+}
+
+/* Color de los íconos de redes sociales al pasar el ratón (hover) */
+.footer .fab:hover {
+  color: #C34751 !important; /* Tu color de marca para hover. ¡Cambia a tu color deseado! */
+}
+
+/* --- Fin de Estilos de Color para el Footer --- */
+
+
+/* Resto de estilos del footer (tamaños, márgenes, etc.) que ya te di: */
+.footer {
+  font-size: 0.9rem;
+}
+
+/* Opcional: Centrar el texto en pantallas pequeñas si no lo hace bien Bootstrap por defecto */
+@media (max-width: 767.98px) {
+  .footer .col-md-4 {
+    text-align: center !important;
+  }
+  .footer .list-unstyled {
+    justify-content: center !important;
+  }
+}
+
+/* Ajuste para que el título "Unite al club" esté más arriba */
+#suscripciones.section-unite { /* Apuntamos a la sección por su ID y su clase específica */
+  padding-top: 1px !important; /* Reduce el padding superior. Ajusta este valor (ej: 0px, 10px, 30px) */
+                                /* El !important es para asegurar que sobrescriba el py-5 o section-spacing */
+}
+
+/* Opcional: Si el `py-5` está en el `container` dentro de la sección, también hay que ajustarlo */
+#suscripciones .container.section-spacing {
+    padding-top: 0 !important; /* O el valor que desees */
+}
+
+
+/* Eliminar el estilo visual de las cards en la sección #contenido */
+#contenido .card {
+  background-color: transparent !important; /* Hace el fondo completamente transparente */
+  border: none !important;                 /* Elimina el borde */
+  box-shadow: none !important;             /* Elimina cualquier sombra que la card pueda tener */
+}
+
+/* Opcional: Ajustar el padding del cuerpo de la card si lo notas raro */
+#contenido .card .card-body {
+  padding: 0; /* Elimina el padding interno del cuerpo de la card */
+  /* O puedes poner un padding más pequeño si quieres algo de espacio */
+  /* padding: 10px; */
+}
+
+/* Ajuste para el texto dentro de las cards si es necesario */
+#contenido .card .card-text {
+  /* Puedes ajustar el color si lo necesitas, o el margen */
+  /* color: #333; */
+  /* margin-bottom: 0; */
+}
+
+/* Asegurarse de que las imágenes se alineen correctamente */
+#contenido .card-img-top {
+    /* Si las imágenes se ven demasiado pegadas al texto o no se centran, puedes ajustar */
+    margin-bottom: 15px; /* Deja un poco de espacio debajo de la imagen */
+}
+
+/* Acercar el título "CAJA RUBÍ" al párrafo en la sección rubí-section */
+.rubí-section .col-lg-6.px-5 h1.ivy-light { /* Selector muy específico para el h1 de esa columna */
+  margin-top: 100px; /* Ajusta este valor. Cuanto más grande, más abajo. Ej: 30px, 80px */
+                    /* Por defecto, los h1 tienen un margin-top, esto lo sobrescribe. */
+}
+
+/* Opcional: Asegurarte de que el párrafo inmediatamente después no tenga un margen superior excesivo */
+.rubí-section .col-lg-6.px-5 h1.ivy-light + p { /* Selecciona el párrafo que viene inmediatamente después del h1 */
+    margin-top: 5px; /* Pequeño margen superior para pegarlo al h1 */
+}
+
+/* Ajustar el tamaño de la fuente del primer párrafo (3 vinos internacionales) si necesitas que se "pegue" más al h1 */
+.rubí-section .col-lg-6.px-5 p:nth-of-type(1) { /* Primer párrafo de esa columna */
+    font-size: 40px; /* Ya lo tienes, solo para referencia */
+    margin-bottom: 0px; /* Reducir su margen inferior si ves mucha separación con el siguiente párrafo */
+}
+
+/* Y el segundo párrafo, si es necesario */
+.rubí-section .col-lg-6.px-5 p:nth-of-type(2) { /* Segundo párrafo de esa columna */
+    margin-top: 5px; /* Reducir su margen superior si se despega demasiado del anterior */
+}
+
+/* Bajar la imagen de la Caja Rubí en la sección .rubí-section */
+.rubí-section .col-lg-6.text-center img { /* Apuntamos directamente a la imagen */
+  margin-top: 80px; /* Ajusta este valor. Cuanto más grande, más abajo irá la imagen. */
+                    /* Puedes probar con valores como 50px, 100px, etc. */
+}
+
+/* Opcional: También puedes añadirlo a la columna que contiene la imagen */
+/* Si la imagen no tiene un margen top ya, quizás sea mejor así */
+/*
+.rubí-section .col-lg-6.text-center {
+    padding-top: 80px; // O margin-top
+}
+*/
+
+/* Si tienes la clase `align-items-center` en el `.row` de la sección Rubí,
+   esto podría estar centrando verticalmente el contenido de ambas columnas.
+   Si la imagen no baja lo suficiente, quizás debas probar esto:
+*/
+.rubí-section .row.align-items-center {
+    align-items: flex-start; /* Alinea los elementos al inicio de la línea (arriba) */
+                             /* Y luego usa margin-top en la imagen o en la columna de la imagen */
+}
+
+/* Asegurar que el título del carrusel se muestre correctamente */
+#carruselOpinionesGenerales .h2-custom {
+    color: #333333; /* Un color oscuro para que se vea bien sobre el fondo F2E9D8 */
+    margin-bottom: 3rem; /* Asegurar un buen espacio debajo del título */
+}
+
+/* Estilos para las cards dentro del carrusel */
+#opinionesCarouselGeneral .carousel-item .card {
+  max-width: 600px; /* Ya lo tienes, pero asegúrate que se aplica */
+  width: 100%;      /* Asegura que ocupe el ancho disponible */
+  min-height: 250px; /* Establece una altura mínima para que no se "aplasten" si el texto es corto */
+  display: flex;    /* Usa flexbox para alinear contenido verticalmente */
+  flex-direction: column; /* Apila el contenido en columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido (útil para texto pequeño) */
+  text-align: center; /* Asegura que el texto esté centrado */
+  margin: 0 auto;   /* Centra la card horizontalmente dentro de su item */
+  padding: 20px;    /* Ajusta el padding si lo necesitas */
+}
+
+/* Asegurar que el texto dentro de la card tenga un max-width para evitar que se estire demasiado */
+#opinionesCarouselGeneral .carousel-item .card p.texto-roboto {
+    max-width: 90%; /* Limita el ancho del párrafo para evitar desbordamiento */
+    margin-left: auto; /* Centra el párrafo */
+    margin-right: auto; /* Centra el párrafo */
+    text-align: center; /* Asegura el texto centrado */
+}
+
+/* Asegurar que los controles (flechas) del carrusel sean visibles */
+#opinionesCarouselGeneral .carousel-control-prev-icon,
+#opinionesCarouselGeneral .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que se vean */
+    border-radius: 50%; /* Hacerlos redondos */
+    padding: 15px; /* Un poco de padding para que sean más grandes */
+    /* Asegúrate de que el background-image por defecto de Bootstrap siga funcionando */
+    background-size: 50%; /* Ajusta el tamaño del icono de la flecha dentro del círculo */
+}
+
+#opinionesCarouselGeneral .carousel-control-prev-icon:hover,
+#opinionesCarouselGeneral .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer al pasar el mouse */
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
