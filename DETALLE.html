@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/htr2sdo.css">
+
+<!-- CSS de AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
@@ -47,11 +52,11 @@
     <!-- Ítems del menú -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Beneficios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Preguntas</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#Caja">Caja</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section-spacing container">Vinos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#swap">Intercambios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#py-5">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">Contacto</a></li>
       </ul>
     </div>
   </div>
@@ -60,7 +65,8 @@
 
 
 <!-- CAJA RUBÍ: Sección de suscripción destacada -->
-<section class="rubí-section py-5" style="
+ <section id="Caja"
+="rubí-section py-5" style="
   background-image: url('imagenes/fondo_de_hero.png');
   background-size: cover;
   background-position: center;
@@ -115,156 +121,110 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
 
 
 <!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container">
+<section id="vinos" class="section-spacing container" data-aos="fade-up">
   <div class="row align-items-center">
     <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+    <div class="col-lg-6 text-center mb-4 mb-lg-0" data-aos="zoom-in">
       <img src="imagenes/botellas.png" class="content-img" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">Vinos del mes</h2>
-      <p class="lead-custom">Este mes celebramos el Malbec, emblema de nuestras bodegas y expresión de los mejores terroirs. </p>
-            <p class="lead-custom">Cada botella elegida resalta matices únicos que invitan a descubrir la intensidad y elegancia de este varietal.</p>
+    <div class="col-lg-6" data-aos="fade-up">
+      <h2 class="h2-custom display-5">Vinos del mes</h2>
+      <p class="lead-custom">Este mes celebramos el Malbec, emblema de nuestras bodegas y expresión de los mejores terroirs.</p>
+      <p class="lead-custom">Cada botella elegida resalta matices únicos que invitan a descubrir la intensidad y elegancia de este varietal.</p>
     </div>
   </div>
 </section>
 
 <!-- ORIGEN DE LOS VINOS: Grilla de imágenes -->
-<section class="py-5 text-center bg-cover" style="background-image: url('imagenes/fondo-vinedos.png');">
-
+<section id="origen" class="py-5 text-center bg-cover" style="background-image: url('imagenes/fondo-vinedos.png');" data-aos="fade-up">
   <div class="container">
     <h2 class="h2-custom text-dark mb-4">Sabores internacionales</h2>
     <p class="lead-custom text-muted mb-5">Paisajes, regiones y viñedos donde nacen nuestras botellas.</p>
-
     <div class="row g-4 justify-content-center">
-
-      <!-- Imagen 1 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <!-- Imagenes con animación -->
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/BILBAO.png" alt="España 1" class="img-fluid" style="border-radius: 10px;">
       </div>
-
-      <!-- Imagen 2 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/MILAN.png" alt="Italia 1" class="img-fluid" style="border-radius: 10px;">
       </div>
-
-      <!-- Imagen 3 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/BURDEOS.png" alt="Francia 1" class="img-fluid" style="border-radius: 10px;">
       </div>
-
-      <!-- Imagen 4 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/VIGO.png" alt="España 2" class="img-fluid" style="border-radius: 10px;">
       </div>
-
-      <!-- Imagen 5 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/VERONA.png" alt="Italia 2" class="img-fluid" style="border-radius: 10px;">
       </div>
-
-      <!-- Imagen 6 -->
-      <div class="col-6 col-md-4 col-lg-2">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
         <img src="imagenes/ANGERS.png" alt="Francia 2" class="img-fluid" style="border-radius: 10px;">
       </div>
-
     </div>
   </div>
 </section>
 
-
-
 <!-- ABOUT: Nuestro servicio -->
-<section class="section-spacing text-center" style="background-color: #F2E9D8; padding: 80px 0;">
-  <section class="py-5" style="
-    background-image: url('imagenes/FONDO_BORDO.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  ">
-   <div class="container" style="color: white !important;"> <!-- FORZAMOS BLANCO -->
-
-    <div class="container">
-
+<section id="degustar" class="section-spacing text-center" style="background-color: #F2E9D8; padding: 80px 0;">
+  <section class="py-5" style="background-image: url('imagenes/FONDO_BORDO.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: scroll;" data-aos="fade-up">
+    <div class="container" style="color: white !important;">
       <!-- Decoración + Título -->
       <div class="d-flex align-items-center justify-content-center mb-5">
         <img src="imagenes/Deco_flecha_izq.png" alt="Decoración izquierda" style="height: 12px; margin-right: 20px;">
-        <h2 class="h2-custom" style="color: white;",>Para degustar</h2>
+        <h2 class="h2-custom" style="color: white;">Para degustar</h2>
         <img src="imagenes/Deco_flecha_izq.png" alt="Decoración derecha" style="height: 12px; margin-left: 20px; transform: scaleX(-1);">
       </div>
-
       <!-- Íconos y textos -->
       <div class="row justify-content-center">
-
-        <!-- Icono 1 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="zoom-in-up">
           <img src="imagenes/brie.png" alt="Brie de Meauxa" style="width: 100px; margin-bottom: 15px;">
           <h4 class="h4-custom" style="color: white;">Brie de Meauxa</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            Cremoso, con corteza blanca enmohecida. Suave y elegante, el mejor acompañante de un vino francés.
-          </p>
+          <p style="color: white; max-width: 300px; margin: 0 auto;">Cremoso, con corteza blanca enmohecida. Suave y elegante, el mejor acompañante de un vino francés.</p>
         </div>
-
-        <!-- Icono 2 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="zoom-in-up">
           <img src="imagenes/manchego.png" alt="Manchego Curado" style="width: 100px; margin-bottom: 15px;">
           <h4 class="h4-custom" style="color: white;">Manchego Curado</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            Firme, de oveja, sabor intenso y ligeramente picante. Recomendamos junto a un vino de España
-          </p>
+          <p style="color: white; max-width: 300px; margin: 0 auto;">Firme, de oveja, sabor intenso y ligeramente picante. Recomendamos junto a un vino de España</p>
         </div>
-
-        <!-- Icono 3 -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="zoom-in-up">
           <img src="imagenes/pecorino.png" alt="Pecorino Romano" style="width: 100px; margin-bottom: 15px;">
           <h4 class="h4-custom" style="color: white;">Pecorino Romano</h4>
-          <p style="color: white;" style="max-width: 300px; margin: 0 auto;">
-            De oveja, firme y salado. Ideal para acompañar vinos de acidez marcada. Cada bocado recuerda a Roma.
-          </p>
+          <p style="color: white; max-width: 300px; margin: 0 auto;">De oveja, firme y salado. Ideal para acompañar vinos de acidez marcada. Cada bocado recuerda a Roma.</p>
         </div>
-
       </div>
     </div>
   </section>
 </section>
 
 <!-- WINESWAP: Intercambio de botellas -->
-<section class="py-5" style="background-color: #F2E9D8;">
+<section id="swap" class="py-5" style="background-color: #F2E9D8;" data-aos="fade-down">
   <div class="container">
     <div class="row align-items-center">
-
       <!-- Columna de texto -->
-      <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5 px-4 text-start">
+      <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5 px-4 text-start" data-aos="fade-up">
         <h2 class="h2-custom ivy-light mb-4">WineSwap</h2>
-        <p class="lead-custom" style="font-family: 'Roboto', sans-serif;">
-          <b>¿Tenés una botella repetida o simplemente querés probar otra cosa?</b><br>
-          Intercambiá vinos con otros miembros del club de forma simple y sin costo adicional.
-        </p>
-        <p class="lead-custom" style="font-family: 'Roboto', sans-serif;">
-          Elegí, solicitá el cambio y recibí una nueva selección en tu próxima caja.
-        </p>
-          <a href="DETALLE.html" class="btn btn-dark"   style="border: none; color: white; font-weight: 300;">Intercambiar</a>
+        <p class="lead-custom"> <b>¿Tenés una botella repetida o simplemente querés probar otra cosa?</b><br> Intercambiá vinos con otros miembros del club de forma simple y sin costo adicional.</p>
+        <p class="lead-custom">Elegí, solicitá el cambio y recibí una nueva selección en tu próxima caja.</p>
+        <a href="DETALLE.html" class="btn btn-dark" style="border: none; color: white; font-weight: 300;">Intercambiar</a>
       </div>
-
       <!-- Imagen a la derecha -->
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 text-center" data-aos="zoom-in">
         <img src="imagenes/botellla_swap.png" alt="Imagen ilustrativa" style="max-width: 290px; height: auto;">
       </div>
-
     </div>
   </div>
 </section>
 
 
+
 <!-- OPINIONES: Testimonios de clientes -->
-<section id="opiniones" class="py-5" style="background-color: #F2E9D8;">
+<section id="opiniones" class="py-5" style="background-color: #F2E9D8;" data-aos="fade-up">
   <div class="container text-center">
     <h2 class="h2-custom ivy-light text-center mb-5">Opiniones sobre la Caja Rubí</h2>
     <div class="row justify-content-center">
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <div class="card h-100 p-4" style="border-radius: 10px; background-color: #ffffff;">
           <p class="texto-roboto" style="font-size: 0.95rem;">
             "¡La Caja Rubí es un viaje! Los vinos internacionales que llegan cada mes son simplemente espectaculares y me han abierto a un mundo de sabores que no conocía. Ideal para quienes buscan algo más."
@@ -274,7 +234,7 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
         </div>
       </div>
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <div class="card h-100 p-4" style="border-radius: 10px; background-color: #ffffff;">
           <p class="texto-roboto" style="font-size: 0.95rem;">
             "Como aficionado avanzado, la selección de la Caja Rubí superó mis expectativas. Cada botella es una sorpresa de alta calidad y la curaduría internacional es impecable."
@@ -284,7 +244,7 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
         </div>
       </div>
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <div class="card h-100 p-4" style="border-radius: 10px; background-color: #ffffff;">
           <p class="texto-roboto" style="font-size: 0.95rem;">
             "Los eventos exclusivos para socios Rubí y Platino son un plus enorme. He aprendido muchísimo y conectado con otros entusiastas. ¡La mejor inversión para mi pasión por el vino!"
@@ -298,16 +258,14 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
   </div>
 </section>
 
-
 <!-- PLANES DESTACADOS -->
-<section class="py-5" style="background-image: url('imagenes/FONDO_BORDO.png'); position: relative;">
+<section id="planes" class="py-5" style="background-image: url('imagenes/FONDO_BORDO.png'); position: relative;" data-aos="fade-up">
   <div class="container text-center">
-    <h2 class="h2-custom ivy-light text-center mb-5"style="color: white;">Tal vez te interese</h2>
-    
+    <h2 class="h2-custom ivy-light text-center mb-5" style="color: white;">Tal vez te interese</h2>
     <div class="row justify-content-center">
 
       <!-- Caja Oro -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <div class="card plan-card">
           <img src="imagenes/caja1.png" class="mb-3 caja-img" alt="Caja Oro">
           <h5><span class="ivy-light">CAJA <span class="ivy-semibold-italic">ORO</span></span></h5>
@@ -317,7 +275,7 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
       </div>
 
       <!-- Caja Platino -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <div class="card plan-card">
           <img src="imagenes/caja3.png" class="mb-3 caja-img" alt="Caja Platino">
           <h5><span class="ivy-light">CAJA <span class="ivy-semibold-italic">PLATINO</span></span></h5>
@@ -330,22 +288,22 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
   </div>
 </section>
 
-
 <!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
-<section class="section-spacing container">
+<section class="section-spacing container" data-aos="fade-up">
   <div class="row align-items-center">
     <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
+    <div class="col-md-6 text-center mb-4 mb-md-0" data-aos="zoom-in">
       <img src="imagenes/invierno.png" class="img-fluid img-rounded" alt="Imagen" style="max-width: 310px; height: auto;">
     </div>
     <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h2 class="display-5" class="h2-custom">Invierno apasionante</h2>
+    <div class="col-md-6 text-center text-md-start" data-aos="fade-up">
+      <h2 class="h2-custom display-5">Invierno apasionante</h2>
       <p class="lead-custom">El invierno trae consigo bajas temperaturas y la necesidad de disfrutar de momentos acogedores en casa.<br>
          ¿Qué mejor manera de acompañar esas noches que un buen vino tinto?</p>
     </div>
   </div>
 </section>
+
 
 <!-- PREGUNTAS FRECUENTES -->
 <section id="faq" class="py-5" style="background-color: #F2E9D8;">
@@ -476,6 +434,9 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
 </footer>
 <!-- /FOOTER -->
 
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+
+
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
@@ -486,6 +447,13 @@ window.addEventListener('scroll', function() {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 </script>
+
+<!-- JS de AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 <!-- Scripts adicionales -->
 <script src="scripts.js"></script>

@@ -43,11 +43,14 @@ body {
   transition: color 0.3s;
 }
 
-/* Ítem activo SIEMPRE en #EEDEA0 */
+/* Ítem activo subrayado */
 .nav-link.active {
-  color: #EEDEA0 !important;
+  text-decoration: underline;
+  text-underline-offset: 4px; /* un poquito separado del texto */
   font-weight: 600;
+  color: inherit !important; /* mantiene el color del resto */
 }
+
 
 .nav-link:hover {
   color: var(--primary-color);
