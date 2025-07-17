@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UvaClub</title>
 
+<link rel="icon" type="image/png" href="imagenes/UC.png">
+
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -120,21 +122,31 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
 
 
 
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section id="vinos" class="section-spacing container" data-aos="fade-up">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0" data-aos="zoom-in">
-      <img src="imagenes/botellas.png" class="content-img" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6" data-aos="fade-up">
-      <h2 class="h2-custom display-5">Vinos del mes</h2>
-      <p class="lead-custom">Este mes celebramos el Malbec, emblema de nuestras bodegas y expresión de los mejores terroirs.</p>
-      <p class="lead-custom">Cada botella elegida resalta matices únicos que invitan a descubrir la intensidad y elegancia de este varietal.</p>
+<!-- SECCIÓN B: Fondo full-width, contenido centrado -->
+<section id="vinos" class="section-spacing container-fluid text-white" style="background-image: url('imagenes/fondo-mancha.png'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-aos="fade-up">
+
+  <!-- Container para centrar el contenido -->
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-3">
+      
+      <!-- Imagen -->
+      <div class="col-lg-5 text-center mb-4 mb-lg-0" data-aos="zoom-in">
+        <img src="imagenes/botellas.png" class="img-fluid img-rounded me-lg-3" alt="Imagen ilustrativa">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-lg-5 text-center text-lg-start" data-aos="fade-up">
+        <h2 class="h2-custom display-5">Vinos del mes</h2>
+        <p class="lead-custom">Este mes celebramos el Malbec, emblema de nuestras bodegas y expresión de los mejores terroirs.</p>
+        <p class="lead-custom">Cada botella elegida resalta matices únicos que invitan a descubrir la intensidad y elegancia de este varietal.</p>
+      </div>
+
     </div>
   </div>
+
 </section>
+
+
 
 <!-- ORIGEN DE LOS VINOS: Grilla de imágenes -->
 <section id="origen" class="py-5 text-center bg-cover" style="background-image: url('imagenes/fondo-vinedos.png');" data-aos="fade-up">
@@ -426,13 +438,36 @@ class="ivy-light">CAJA <span class="ivy-semibold-italic">RUBÍ</span></span></h1
 </section>
 <!-- /CONTACT FORM -->
 
-<!-- FOOTER: Pie de página -->
-<footer class="text-center py-4">
-  <div class="container">
-    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+<footer class="footer mt-auto py-4 bg-light"> <div class="container text-center">
+    <div class="row align-items-center">
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <a href="#" class="d-inline-block">
+            <img src="imagenes/logo.png" alt="UvaClub Logo" style="height: 40px;">
+        </a>
+        <p class="text-muted small mt-2">&copy; 2025 UvaClub. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex justify-content-center m-0">
+          <li class="mx-2"><a href="#" class="text-muted text-decoration-none small">Política de Privacidad</a></li>
+          <li class="mx-2"><a href="#" class="text-muted text-decoration-none small">Términos y Condiciones</a></li>
+          <li class="mx-2"><a href="#" class="text-muted text-decoration-none small">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#" class="text-muted mx-2">
+          <i class="fab fa-facebook-f fa-lg"></i> </a>
+        <a href="#" class="text-muted mx-2">
+          <i class="fab fa-instagram fa-lg"></i> </a>
+        <a href="#" class="text-muted mx-2">
+          <i class="fab fa-twitter fa-lg"></i> </a>
+      </div>
+
+    </div>
   </div>
 </footer>
-<!-- /FOOTER -->
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
 

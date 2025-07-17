@@ -243,33 +243,40 @@
 </section>
 
 
-<!-- SECCIÓN C: Título centrado, imagen izquierda, texto derecha -->
-<div class="centered-section-wrapper"data-aos="zoom-out-up"></div>>
-  <section id="beneficios" class="section-spacing container text-center" style="padding: 40px 0 60px 0; margin-top: -30px;">
+<!-- SECCIÓN C: Fondo full-width, contenido centrado, imagen izquierda y texto derecha -->
+<section id="beneficios" class="section-spacing container-fluid text-white" style="background-image: url('imagenes/fondo-mancha.png'); background-size: cover; background-position: center; background-repeat: no-repeat;" data-aos="zoom-out-up">
 
-    <div class="d-flex align-items-center justify-content-center mb-5"data-aos="fade-down">
+  <div class="container" style="padding: 40px 0 60px 0; margin-top: -30px;">
+    
+    <!-- Título decorado -->
+    <div class="d-flex align-items-center justify-content-center mb-5" data-aos="fade-down">
       <img src="imagenes/Deco_flecha_izq.png" alt="Decoración izquierda" style="height: 12px; margin-right: 20px;">
       <h2 class="h2-custom m-0">Beneficios</h2>
       <img src="imagenes/Deco_flecha_izq.png" alt="Decoración derecha" style="height: 12px; margin-left: 20px; transform: scaleX(-1);">
     </div>
 
-    <div class="row align-items-center justify-content-center text-start"data-aos="fade-down">
-      <div class="col-lg-6">
+    <!-- Contenido con columnas centradas -->
+    <div class="row align-items-center justify-content-center g-3 text-start" data-aos="fade-down">
+      <!-- Texto -->
+      <div class="col-lg-5">
         <p class="lead-custom"><b>Material de cata completo</b><br>
-Incluye fichas sensoriales impresas y acceso a videos guiados <br>
-con degustaciones detalladas y consejos del sommelier.</p>
+        Incluye fichas sensoriales impresas y acceso a videos guiados <br>
+        con degustaciones detalladas y consejos del sommelier.</p>
+
         <p class="lead-custom"><b>Eventos privados y masterclasses</b><br>
-Invitaciones a catas virtuales y experiencias presenciales <br>
-con sommeliers y productores.</p>
+        Invitaciones a catas virtuales y experiencias presenciales <br>
+        con sommeliers y productores.</p>
       </div>
 
-      <div class="col-lg-6 text-center mb-4 mb-lg-0"data-aos="fade-down">
-        <img src="imagenes/Beneficios.png" class="content-img" alt="Imagen ilustrativa" style="width: 300px; max-width: 100%; height: auto;">
+      <!-- Imagen -->
+      <div class="col-lg-5 text-center mb-4 mb-lg-0">
+        <img src="imagenes/Beneficios.png" class="img-fluid img-rounded" alt="Imagen ilustrativa" style="max-width: 300px;">
       </div>
     </div>
 
-  </section>
-</div>
+  </div>
+</section>
+
 
 <!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
 <section id="contenido" class="section-spacing container py-5 text-center">
